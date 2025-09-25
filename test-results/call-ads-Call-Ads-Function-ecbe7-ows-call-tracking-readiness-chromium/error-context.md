@@ -1,0 +1,145 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - heading "Facebook Ad Repurposer" [level=1] [ref=e9]
+        - generic [ref=e10]: ROAS-Focused MVP
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]: "Client:"
+          - combobox [ref=e15]:
+            - generic:
+              - generic:
+                - generic: Test Agency Client
+                - generic: fitness
+            - img [ref=e16]
+        - button "New Client" [ref=e18]:
+          - img
+          - generic [ref=e19]: New Client
+  - navigation [ref=e20]:
+    - generic [ref=e22]:
+      - button "Overview" [ref=e23]:
+        - img
+        - generic [ref=e24]: Overview
+      - button "Debug API" [ref=e25]:
+        - img
+        - generic [ref=e26]: Debug API
+      - button "Ad Scraping" [ref=e27]:
+        - img
+        - generic [ref=e28]: Ad Scraping
+      - button "Ad Library" [ref=e29]:
+        - img
+        - generic [ref=e30]: Ad Library
+      - button "Variation Studio" [ref=e31]:
+        - img
+        - generic [ref=e32]: Variation Studio
+      - button "Performance" [active] [ref=e33]:
+        - img
+        - generic [ref=e34]: Performance
+  - main [ref=e35]:
+    - generic [ref=e39]:
+      - generic [ref=e41]:
+        - heading "Test Agency Client" [level=2] [ref=e42]
+        - paragraph [ref=e43]: fitness
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - img [ref=e47]
+            - generic [ref=e51]: Target ROAS
+          - paragraph [ref=e52]: 4.5x
+        - generic [ref=e53]:
+          - generic [ref=e54]:
+            - img [ref=e55]
+            - generic [ref=e57]: AOV
+          - paragraph [ref=e58]: $85
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - heading "Performance Dashboard" [level=2] [ref=e61]
+        - paragraph [ref=e62]: ROAS tracking and analytics for Test Agency Client
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - generic [ref=e66]: Actual ROAS
+            - img [ref=e67]
+          - generic [ref=e70]:
+            - generic [ref=e71]: "--"
+            - paragraph [ref=e72]: "Target: 4.5x"
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: Total Spend
+            - img [ref=e76]
+          - generic [ref=e78]:
+            - generic [ref=e79]: $0
+            - paragraph [ref=e80]: No campaigns tracked yet
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - generic [ref=e83]: Best Performing Variation
+            - img [ref=e84]
+          - generic [ref=e88]:
+            - generic [ref=e89]: "--"
+            - paragraph [ref=e90]: No variations tested
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: Prediction Accuracy
+            - img [ref=e94]
+          - generic [ref=e96]:
+            - generic [ref=e97]: "--"
+            - paragraph [ref=e98]: Prediction vs actual
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - generic [ref=e101]: Variation Performance by Type
+          - generic [ref=e102]: How each variation type performs for your industry
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - generic [ref=e107]: "1"
+              - generic [ref=e108]:
+                - paragraph [ref=e109]: Urgency-Focused
+                - paragraph [ref=e110]: 0 tests completed
+            - generic [ref=e111]:
+              - paragraph [ref=e112]: "--"
+              - paragraph [ref=e113]: Avg ROAS
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - generic [ref=e116]: "2"
+              - generic [ref=e117]:
+                - paragraph [ref=e118]: Social Proof
+                - paragraph [ref=e119]: 0 tests completed
+            - generic [ref=e120]:
+              - paragraph [ref=e121]: "--"
+              - paragraph [ref=e122]: Avg ROAS
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - generic [ref=e125]: "3"
+              - generic [ref=e126]:
+                - paragraph [ref=e127]: Benefit-Driven
+                - paragraph [ref=e128]: 0 tests completed
+            - generic [ref=e129]:
+              - paragraph [ref=e130]: "--"
+              - paragraph [ref=e131]: Avg ROAS
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - generic [ref=e134]: "4"
+              - generic [ref=e135]:
+                - paragraph [ref=e136]: Problem Agitation
+                - paragraph [ref=e137]: 0 tests completed
+            - generic [ref=e138]:
+              - paragraph [ref=e139]: "--"
+              - paragraph [ref=e140]: Avg ROAS
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143]: "5"
+              - generic [ref=e144]:
+                - paragraph [ref=e145]: Offer-Optimized
+                - paragraph [ref=e146]: 0 tests completed
+            - generic [ref=e147]:
+              - paragraph [ref=e148]: "--"
+              - paragraph [ref=e149]: Avg ROAS
+      - generic [ref=e151]:
+        - img [ref=e152]
+        - heading "No performance data yet" [level=3] [ref=e154]
+        - paragraph [ref=e155]: Start by creating ad variations and tracking their performance to see detailed ROAS analytics and optimization insights.
+```

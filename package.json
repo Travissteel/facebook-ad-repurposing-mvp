@@ -1,0 +1,45 @@
+{
+  "name": "facebook-ad-repurposing-mvp",
+  "version": "1.0.0",
+  "description": "ROAS-focused Facebook ad variation generator for agency clients",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "server-windows": "node server/index.js",
+    "client": "cd client && npm start",
+    "client-windows": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "keywords": [
+    "facebook",
+    "ads",
+    "roas",
+    "marketing",
+    "ai",
+    "agency"
+  ],
+  "author": "Travis Steel",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.6.2",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.20.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}

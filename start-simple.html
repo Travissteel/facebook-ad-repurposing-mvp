@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Ad Repurposing MVP - Launcher</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f8fafc;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { color: #1e40af; margin-bottom: 20px; }
+        .status { padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .success { background: #dcfce7; border: 1px solid #16a34a; color: #166534; }
+        .error { background: #fef2f2; border: 1px solid #dc2626; color: #991b1b; }
+        .warning { background: #fef3c7; border: 1px solid #d97706; color: #92400e; }
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 10px 5px;
+            font-size: 16px;
+        }
+        button:hover { background: #2563eb; }
+        .code {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: monospace;
+            margin: 10px 0;
+            border-left: 4px solid #3b82f6;
+        }
+        .steps {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .step {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 3px solid #3b82f6;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Facebook Ad Repurposing MVP</h1>
+        
+        <div class="status warning">
+            <strong>⚠️ Networking Issue Detected</strong><br>
+            Windows/WSL networking is preventing localhost connections. Let's fix this step by step.
+        </div>
+
+        <div class="steps">
+            <h3>🔧 Windows Quick Fix Solution</h3>
+            
+            <div class="step">
+                <strong>Step 1: Open Windows PowerShell (as Administrator)</strong>
+                <div class="code">
+                    Press Win+X → Click "Windows PowerShell (Admin)"
+                </div>
+            </div>
+
+            <div class="step">
+                <strong>Step 2: Navigate to Project</strong>
+                <div class="code">
+cd C:\Users\travi\facebook-ad-repurposing-mvp
+                </div>
+            </div>
+
+            <div class="step">
+                <strong>Step 3: Install Dependencies (if needed)</strong>
+                <div class="code">
+npm install
+cd client
+npm install
+cd ..
+                </div>
+            </div>
+
+            <div class="step">
+                <strong>Step 4: Start Backend</strong>
+                <div class="code">
+start powershell -NoExit -Command "npm run server-windows"
+                </div>
+            </div>
+
+            <div class="step">
+                <strong>Step 5: Start Frontend</strong>
+                <div class="code">
+start powershell -NoExit -Command "cd client; npm run dev"
+                </div>
+            </div>
+
+            <div class="step">
+                <strong>Step 6: Open Application</strong>
+                <div class="code">
+start http://localhost:3000
+                </div>
+            </div>
+        </div>
+
+        <div class="status success">
+            <strong>✅ Expected Result</strong><br>
+            You should see two PowerShell windows open (backend + frontend) and your browser should load the Facebook Ad Repurposing dashboard.
+        </div>
+
+        <h3>🎯 Alternative: One-Command Solution</h3>
+        <p>Copy and paste this into Windows PowerShell (Admin):</p>
+        <div class="code">
+cd C:\Users\travi\facebook-ad-repurposing-mvp; npm install; cd client; npm install; cd ..; start powershell -NoExit -Command "npm run server-windows"; start powershell -NoExit -Command "cd client; npm run dev"; start http://localhost:3000
+        </div>
+
+        <h3>📱 Your MVP Features</h3>
+        <ul>
+            <li><strong>Live Facebook Ad Scraping</strong> - Real competitor data via Apify MCP</li>
+            <li><strong>AI Copy Generation</strong> - GPT-4 powered ROAS-optimized variations</li>
+            <li><strong>Image Generation</strong> - Gemini/Nano Banana for visual variations</li>
+            <li><strong>Client Management</strong> - Agency dashboard with industry optimization</li>
+            <li><strong>ROAS Scoring</strong> - Intelligent ranking by conversion potential</li>
+        </ul>
+
+        <div class="status warning">
+            <strong>🔍 Troubleshooting</strong><br>
+            If you still get "localhost refused to connect":<br>
+            1. Check Windows Firewall settings<br>
+            2. Try 127.0.0.1:3000 instead of localhost:3000<br>
+            3. Ensure both PowerShell windows are running<br>
+            4. Wait 30 seconds after starting for full initialization
+        </div>
+
+        <button onclick="window.open('http://localhost:3000', '_blank')">
+            🌐 Try Opening App
+        </button>
+        
+        <button onclick="window.open('http://127.0.0.1:3000', '_blank')">
+            🔄 Try Alternative URL
+        </button>
+    </div>
+
+    <script>
+        // Auto-check if localhost is accessible
+        setTimeout(() => {
+            fetch('http://localhost:3000')
+                .then(() => {
+                    document.body.innerHTML = `
+                        <div class="container">
+                            <div class="status success">
+                                <h2>✅ SUCCESS! Application is Running</h2>
+                                <p>Your Facebook Ad Repurposing MVP is accessible at:</p>
+                                <button onclick="window.open('http://localhost:3000', '_blank')" style="font-size: 18px; padding: 15px 30px;">
+                                    🚀 Open Application
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                })
+                .catch(() => {
+                    console.log('Application not yet accessible - follow setup steps above');
+                });
+        }, 2000);
+    </script>
+</body>
+</html>
