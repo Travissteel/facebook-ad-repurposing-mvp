@@ -2,7 +2,7 @@
 const axios = require('axios');
 
 async function testScrapingSetup() {
-  const API_KEY = process.env.APIFY_API_KEY || 'your_your_apify_api_key_here_here';
+  const API_KEY = process.env.APIFY_API_KEY || 'your_apify_api_key_here';
   
   console.log('🔍 Testing Apify API configuration...');
   
